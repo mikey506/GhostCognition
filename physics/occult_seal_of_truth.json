@@ -1,0 +1,58 @@
+[
+  {
+    "name": "recursive_subdivision",
+    "code": "def recursive_subdivision():\n    return {\n        'formula': r'S(n,k) = n \\times k',\n        'example': r'S(7,7)=49',\n        'emergent_property': 'emerging hierarchical sectors from iterative multiplication',\n        'derivation': 'Start with base n=7 sides; multiply by k=7 for recursive layers, yielding emergent 49 \\\"portals.\\\"'\n    }"
+  },
+  {
+    "name": "fractal_self_similarity",
+    "code": "def fractal_self_similarity():\n    return {\n        'formula': r'T(k) = 3 \\times T(k-1)',\n        'example': r'T(0)=1',\n        'emergent_property': 'Infinite holes emerge from finite iterations, density approaches 0',\n        'derivation': 'Base case T(0)=1; recursively triple and remove center, leading to self-similar emergence at all scales.'\n    }"
+  },
+  {
+    "name": "mandelbrot_set_recursion",
+    "code": "def mandelbrot_set_recursion():\n    return {\n        'formula': r'z_{n+1} = z_n^2 + c',\n        'emergent_property': 'Chaotic boundaries arise from simple quadratic iteration',\n        'derivation': 'Iterate the function; bounded orbits emerge as the black region, revealing self-replicating forms upon zooming.'\n    }"
+  },
+  {
+    "name": "koch_snowflake_perimeter",
+    "code": "def koch_snowflake_perimeter():\n    return {\n        'formula': r'P(k) = P(0) \\times (4/3)^k',\n        'emergent_property': 'Finite area with infinite perimeter from recursive additions',\n        'derivation': 'Start with base perimeter; each iteration adds 1/3 length segments, multiplying by 4/3, leading to divergent length.'\n    }"
+  },
+  {
+    "name": "gematria_permutations",
+    "code": "def gematria_permutations():\n    return {\n        'formula': 'Sum of letter values, then recursive digit sum',\n        'example': '1+3+30+1=35, 3+5=8',\n        'emergent_property': 'Infinite mapping back to letters via modular arithmetic',\n        'derivation': 'Sum numerical equivalents; reduce digits recursively until single digit, revealing emergent symbolic connections.'\n    }"
+  },
+  {
+    "name": "quantum_wave_function_collapse",
+    "code": "def quantum_wave_function_collapse():\n    return {\n        'formula': r'i\\hbar \\frac{\\partial}{\\partial t} \\psi = \\hat{H} \\psi',\n        'emergent_property': 'Measurable state emerges from superposition upon observation',\n        'derivation': 'Solve time-dependent equation for ψ; apply measurement operator, collapsing to eigenvector, with probabilities from Born rule.'\n    }"
+  },
+  {
+    "name": "quantum_entanglement",
+    "code": "def quantum_entanglement():\n    return {\n        'formula': r'|\\Psi\\rangle = \\frac{1}{\\sqrt{2}} (|00\\rangle + |11\\rangle)',\n        'emergent_property': 'Measuring one instantly determines the other, violating local realism',\n        'derivation': 'Prepare entangled state; compute expectation values for spin measurements at angles, showing emergent non-local correlations.'\n    }"
+  },
+  {
+    "name": "vibrational_modes_quantum_fields",
+    "code": "def vibrational_modes_quantum_fields():\n    return {\n        'formula': r'E_n = \\hbar \\omega (n + \\frac{1}{2})',\n        'emergent_property': 'Ground state energy (vacuum fluctuations) arises even at n=0',\n        'derivation': 'Quantize classical oscillator Hamiltonian H = \\frac{p^2}{2m} + \\frac{1}{2} m \\omega^2 x^2; eigenvalues from creation/annihilation operators.'\n    }"
+  },
+  {
+    "name": "hilbert_space_dimensionality",
+    "code": "def hilbert_space_dimensionality():\n    return {\n        'formula': r'\\dim(\\mathcal{H}_1 \\otimes \\mathcal{H}_2) = \\dim(\\mathcal{H}_1) \\times \\dim(\\mathcal{H}_2)',\n        'example': 'For n qubits: 2^n states',\n        'emergent_property': 'Emergent complexity scales exponentially with added dimensions',\n        'derivation': 'Basis vectors multiply; emergent complexity scales exponentially with added dimensions.'\n    }"
+  },
+  {
+    "name": "lorentz_invariance",
+    "code": "def lorentz_invariance():\n    return {\n        'formula': r'\\Delta s^2 = c^2 \\Delta t^2 - \\Delta x^2 - \\Delta y^2 - \\Delta z^2',\n        'emergent_property': 'Relativistic effects (time dilation) arise from high speeds',\n        'derivation': 'Transform coordinates via Lorentz matrix; interval remains constant, leading to emergent phenomena like length contraction.'\n    }"
+  },
+  {
+    "name": "einstein_field_equations",
+    "code": "def einstein_field_equations():\n    return {\n        'formula': r'G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu}',\n        'emergent_property': 'Gravity as curvature emerging from mass-energy',\n        'derivation': 'From general relativity action; vary metric to get equations, solving for metrics like Schwarzschild (black holes).'\n    }"
+  },
+  {
+    "name": "schwarzschild_radius",
+    "code": "def schwarzschild_radius():\n    return {\n        'formula': r'r_s = \\frac{2GM}{c^2}',\n        'emergent_property': 'Event horizon arises for compact masses, leading to wormhole speculations',\n        'derivation': 'Set escape velocity to c in Newtonian limit; integrate geodesic equations for full GR solution.'\n    }"
+  },
+  {
+    "name": "emergent_gravity",
+    "code": "def emergent_gravity():\n    return {\n        'formula': r'F = -\\frac{\\Delta S}{\\Delta x} T',\n        'emergent_property': 'Macroscopic gravity from microscopic quantum information',\n        'derivation': 'From holographic principle; entropy gradient induces force, deriving Newton\\'s law as emergent.'\n    }"
+  },
+  {
+    "name": "recent_quantum_breakthroughs_2024_2025",
+    "code": "def recent_quantum_breakthroughs_2024_2025():\n    return [\n        'Evidence that dark energy may be weakening (Quanta Magazine, 2024)',\n        'Discovery of a supersolid phase of matter (Quanta Magazine, 2024)',\n        'Quantum tornadoes confirming paradoxical phase (YouTube/Quanta, 2024)',\n        'Entanglement-based imaging and quantum error correction (Physics World, 2024)',\n        'Generating quantum spin currents in graphene without magnetic fields (ScienceDaily, June 2025)',\n        'Breakthroughs in quantum use cases for defense and semiconductors (McKinsey, June 2025)',\n        'Discovery of new class of particles: fractional excitons (Phys.org, January 2025)',\n        'Physics Breakthrough of the Year awarded to quantum computing scientists (IOP, December 2024)',\n        'Breakthrough in understanding high-temperature superconductors (Simons Foundation, May 2024)',\n        'Quantum science events and advancements at LMU München (LMU, February 2025)'\n    ]"
+  }
+]

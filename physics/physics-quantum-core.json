@@ -1,0 +1,92 @@
+[
+  {
+    "name": "newtons_second_law",
+    "description": "Calculates the force on an object given its mass and acceleration, based on Newton's Second Law.",
+    "type": "classical_mechanics",
+    "code": "def newtons_second_law(m, a):\n    \"\"\"Calculates force given mass (m) and acceleration (a).\"\"\"\n    return m * a"
+  },
+  {
+    "name": "gravitational_force",
+    "description": "Calculates the attractive gravitational force between two masses according to Newton's Law of Universal Gravitation.",
+    "type": "classical_mechanics",
+    "code": "def gravitational_force(m1, m2, r):\n    \"\"\"Calculates the gravitational force between two masses (m1, m2) separated by a distance (r).\"\"\"\n    G = 6.67430e-11\n    return G * (m1 * m2) / (r**2)"
+  },
+  {
+    "name": "kinetic_energy",
+    "description": "Calculates the energy an object possesses due to its motion.",
+    "type": "classical_mechanics",
+    "code": "def kinetic_energy(m, v):\n    \"\"\"Calculates the kinetic energy of an object with mass (m) and velocity (v).\"\"\"\n    return 0.5 * m * v**2"
+  },
+  {
+    "name": "gravitational_potential_energy",
+    "description": "Calculates the potential energy of an object due to its position in a gravitational field.",
+    "type": "classical_mechanics",
+    "code": "def gravitational_potential_energy(m, h):\n    \"\"\"Calculates gravitational potential energy for mass (m) at height (h) near Earth's surface.\"\"\"\n    g = 9.81\n    return m * g * h"
+  },
+  {
+    "name": "conservation_of_mechanical_energy",
+    "description": "Verifies the principle that the total mechanical energy in a conservative system remains constant.",
+    "type": "classical_mechanics",
+    "code": "def conservation_of_mechanical_energy(Ki, Ui, Kf, Uf, tolerance=1e-9):\n    \"\"\"Returns True if initial energy (Ki + Ui) equals final energy (Kf + Uf) within a tolerance.\"\"\"\n    initial_energy = Ki + Ui\n    final_energy = Kf + Uf\n    return abs(initial_energy - final_energy) < tolerance"
+  },
+  {
+    "name": "dirac_equation",
+    "description": "Represents the Dirac equation with a simplified placeholder for four-component spinors.",
+    "type": "quantum_physics",
+    "code": "def dirac_equation(state):\n    \"\"\"Simplified placeholder for Dirac equation, returns state scaled by a constant.\"\"\"\n    import numpy as np\n    return np.array(state) * 0.5"
+  },
+  {
+    "name": "qubit_state",
+    "description": "Verifies if a pair of complex coefficients form a valid, normalized quantum bit (qubit) state.",
+    "type": "quantum_information",
+    "code": "def qubit_state(alpha, beta):\n    \"\"\"Checks if |alpha|^2 + |beta|^2 = 1 for a qubit state |psi> = alpha|0> + beta|1>.\"\"\"\n    return abs(abs(alpha)**2 + abs(beta)**2 - 1) < 1e-9"
+  },
+  {
+    "name": "bell_state_phi_plus",
+    "description": "Returns the state vector for the |\u03a6+> Bell state, a maximally entangled state of two qubits.",
+    "type": "quantum_information",
+    "code": "def bell_state_phi_plus():\n    \"\"\"Returns the state vector for the |\u03a6+> Bell state: (1/sqrt(2)) * (|00> + |11>).\"\"\"\n    import numpy as np\n    return (1/np.sqrt(2)) * np.array([1, 0, 0, 1])"
+  },
+  {
+    "name": "standard_model_symmetry",
+    "description": "Returns the fundamental gauge group of the Standard Model of particle physics.",
+    "type": "particle_physics",
+    "code": "def standard_model_symmetry():\n    \"\"\"Returns the symmetry group of the Standard Model.\"\"\"\n    return 'SU(3)_C x SU(2)_L x U(1)_Y'"
+  },
+  {
+    "name": "entanglement",
+    "description": "Computes the Kronecker product of two state vectors to simulate quantum entanglement.",
+    "type": "quantum_information",
+    "code": "def entanglement(state1, state2):\n    import numpy as np\n    s1 = np.asarray(state1, dtype=complex)\n    s2 = np.asarray(state2, dtype=complex)\n    out = np.kron(s1, s2)\n    n = np.linalg.norm(out)\n    return out / (n if n else 1.0)"
+  },
+  {
+    "name": "grover_optimize",
+    "description": "Optimizes a prompt using a simple transformation, handling string inputs safely.",
+    "type": "quantum_algorithm",
+    "code": "def grover_optimize(prompt):\n    try:\n        return 'Optimized: ' + str(prompt).upper()\n    except Exception:\n        return 'Optimized: ' + str(prompt)"
+  },
+  {
+    "name": "quantum_fluctuation",
+    "description": "Simulates quantum vacuum fluctuations by adding small random noise to a state vector and renormalizing.",
+    "type": "quantum_physics",
+    "code": "def quantum_fluctuation(state, sigma=0.05):\n    import numpy as np\n    arr = np.asarray(state, dtype=complex)\n    noise = (np.random.randn(*arr.shape) + 1j*np.random.randn(*arr.shape)) * (sigma/np.sqrt(2))\n    out = arr + noise\n    n = np.linalg.norm(out)\n    return out / (n if n else 1.0)"
+  },
+  {
+    "name": "quantum_foam_lattice",
+    "description": "Simulates a quantum foam lattice by computing the area for a given spin value.",
+    "type": "quantum_gravity",
+    "code": "def quantum_foam_lattice(j):\n    import numpy as np\n    gamma = 0.274\n    l_p = 1.616e-35\n    return 8 * np.pi * gamma * l_p**2 * np.sqrt(j * (j + 1))"
+  },
+  {
+    "name": "mandelbrot_set_iteration",
+    "description": "Computes if a point is in the Mandelbrot set by iterating z_{n+1} = z_n^2 + c.",
+    "type": "fractal_geometry",
+    "code": "def mandelbrot_set_iteration(c_real, c_imag, max_iter=100):\n    c = complex(c_real, c_imag)\n    z = 0\n    for i in range(max_iter):\n        z = z*z + c\n        if abs(z) > 2:\n            return i\n    return max_iter"
+  },
+  {
+    "name": "recent_quantum_breakthroughs_2024_2025",
+    "description": "Provides a list of key advancements in quantum physics from 2024-2025.",
+    "type": "quantum_physics_discovery",
+    "code": "def recent_quantum_breakthroughs_2024_2025():\n    return [\n        'Quantum spin currents in graphene without magnetic fields',\n        'Measurement-induced entanglement transitions',\n        'Quantum-gravity interface experiments',\n        'Room-temperature quantum defects advances',\n        'Error-corrected logical qubits milestones'\n    ]"
+  }
+]

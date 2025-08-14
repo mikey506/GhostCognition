@@ -1,0 +1,110 @@
+[
+  {
+    "name": "prime_refraction_equation",
+    "description": "Refraction of nonlocal wavefunction into localized state via phase interference.",
+    "type": "quantum_nonlocality",
+    "code": "def prime_refraction_equation(psi, x, phi):\n    \"\"\"Placeholder for \\beta(x) = \\int [\\alpha(\\psi) \\cdot e^{i\\phi(x,\\psi)}] d\\psi. Returns scaled psi.\"\"\"\n    import numpy as np\n    return np.array(psi) * np.exp(1j * phi)"
+  },
+  {
+    "name": "beta_recursion_field",
+    "description": "Recursive emergence with self-influence and gradient feedback.",
+    "type": "quantum_nonlocality",
+    "code": "def beta_recursion_field(beta_n, gamma, x):\n    \"\"\"Placeholder for \\beta_{n+1}(x) = f(\\beta_n(x)) + \\gamma \\cdot \\nabla \\beta_n(x). Returns beta_n + gamma.\"\"\"\n    import numpy as np\n    return np.array(beta_n) + gamma"
+  },
+  {
+    "name": "fractal_conjugation_function",
+    "description": "Dirichlet-style expansion encoding topological complexity.",
+    "type": "quantum_nonlocality",
+    "code": "def fractal_conjugation_function(x, s, k_max=10):\n    \"\"\"Placeholder for F_{\\text{fractal}}(x) = \\sum_{k=1}^{\\infty} \\frac{(-1)^k}{k^s} \\cdot \\beta^k(x). Sums up to k_max.\"\"\"\n    import numpy as np\n    result = 0\n    for k in range(1, k_max + 1):\n        result += ((-1)**k / k**s) * np.array(x)**k\n    return result"
+  },
+  {
+    "name": "nonlocal_coupling_tensor",
+    "description": "Tensor field describing entanglement tension across quantum phases.",
+    "type": "quantum_symbolic_coupling",
+    "code": "def nonlocal_coupling_tensor(alpha, beta):\n    \"\"\"Placeholder for \\Lambda_{\\mu\\nu} = \\partial_\\mu \\alpha \\cdot \\partial_\\nu \\beta. Returns dot product.\"\"\"\n    import numpy as np\n    return np.dot(np.array(alpha), np.array(beta))"
+  },
+  {
+    "name": "symbolic_collapse_probability",
+    "description": "Projection amplitude between prime and fractal representations.",
+    "type": "quantum_symbolic_coupling",
+    "code": "def symbolic_collapse_probability(alpha, beta, U):\n    \"\"\"Placeholder for P(\\beta | \\alpha) = |\\langle \\beta | U | \\alpha \\rangle|^2. Returns squared norm.\"\"\"\n    import numpy as np\n    return np.abs(np.dot(np.array(beta).conj(), np.dot(U, np.array(alpha))))**2"
+  },
+  {
+    "name": "wave_sigil_conversion",
+    "description": "Extracts symbolic representation from quantum wavefunction.",
+    "type": "quantum_symbolic_coupling",
+    "code": "def wave_sigil_conversion(alpha, G):\n    \"\"\"Placeholder for S[\\alpha] = \\int \\alpha(x) \\cdot G(x) dx. Returns dot product.\"\"\"\n    import numpy as np\n    return np.dot(np.array(alpha), np.array(G))"
+  },
+  {
+    "name": "topological_path_integral",
+    "description": "Background-independent path integral over surfaces replacing strings.",
+    "type": "spacetime_gravity",
+    "code": "def topological_path_integral(Sigma, A, kappa):\n    \"\"\"Placeholder for Z = \\int D[\\Sigma] \\exp\\left(i\\int_\\Sigma (\\mathbf{A} \\wedge d\\mathbf{A} + \\kappa \\cdot \\chi(\\Sigma))\\right). Returns kappa.\"\"\"\n    return kappa"
+  },
+  {
+    "name": "geometric_emergence_equation",
+    "description": "Spacetime emergence from quantum correlations.",
+    "type": "spacetime_gravity",
+    "code": "def geometric_emergence_equation(psi, T_mu_nu, C_mu_nu, alpha, ell_P):\n    \"\"\"Placeholder for R_{\\mu\\nu} - \\frac{1}{2}Rg_{\\mu\\nu} = \\alpha (\\langle \\psi | T_{\\mu\\nu} | \\psi \\rangle - \\ell_P^2 C_{\\mu\\nu}). Returns scaled T_mu_nu.\"\"\"\n    import numpy as np\n    return alpha * (np.dot(np.array(psi).conj(), np.dot(T_mu_nu, psi)) - ell_P**2 * C_mu_nu)"
+  },
+  {
+    "name": "fractal_bootstrap_condition",
+    "description": "Amplifies Planck-scale effects to observable regimes.",
+    "type": "spacetime_gravity",
+    "code": "def fractal_bootstrap_condition(s, t, s_fract):\n    \"\"\"Placeholder for \\text{Re}\\mathcal{M}_{\\text{grav}}(s,t) = \\frac{1}{\\pi} \\mathcal{P} \\int \\frac{\\text{Im}\\mathcal{M}_{\\text{grav}}(s',t) \\cdot \\Gamma(s_{\\text{fract}}/s')}{s' - s} ds'. Returns s_fract.\"\"\"\n    return s_fract"
+  },
+  {
+    "name": "vacuum_selection_functional",
+    "description": "Thermodynamic selection of universe vacuum state.",
+    "type": "cosmological_solutions",
+    "code": "def vacuum_selection_functional(rho_V, T_cosmo, beta):\n    \"\"\"Placeholder for \\Phi[V] = -T_{\\text{cosmo}} (S_{\\text{vN}}(\\rho_V) + \\beta \\cdot \\| \\nabla_{\\text{mod}} \\Lambda \\|_2). Returns -T_cosmo * beta.\"\"\"\n    return -T_cosmo * beta"
+  },
+  {
+    "name": "dark_dimension_cancellation",
+    "description": "Vacuum energy cancellation via extra-dimensional interference.",
+    "type": "cosmological_solutions",
+    "code": "def dark_dimension_cancellation(Lambda_4D, phi, F, lambda_d):\n    \"\"\"Placeholder for \\Lambda_{\\text{eff}} = \\Lambda_{4D} + \\int d y \\sqrt{g_5} \\left( \\frac{1}{2}(\\partial_y\\phi)^2 - \\frac{1}{4}\\phi^2 \\lambda_d^2 \\cdot (F \\wedge F) \\right). Returns Lambda_4D.\"\"\"\n    return Lambda_4D"
+  },
+  {
+    "name": "quantum_feedback_loop",
+    "description": "Dynamic cosmological constant regulation.",
+    "type": "cosmological_solutions",
+    "code": "def quantum_feedback_loop(Lambda_0, eta, H, H_0, t):\n    \"\"\"Placeholder for \\Lambda_{\\text{eff}} = \\Lambda_0 - \\eta \\int_0^t dt' \\langle \\mathcal{H}_{\\text{vac}} \\rangle e^{-\\alpha (H(t') - H_0)^2}. Returns Lambda_0 - eta.\"\"\"\n    return Lambda_0 - eta"
+  },
+  {
+    "name": "holographic_complexity_constraint",
+    "description": "Vacuum selection via quantum computational complexity.",
+    "type": "unified_theory",
+    "code": "def holographic_complexity_constraint(rho_V, gamma):\n    \"\"\"Placeholder for \\mathcal{C}_{\\text{vac}} = \\min_V [\\mathcal{K}(\\rho_V) + \\gamma \\cdot \\| \\nabla^2_{\\text{mod}} \\mathcal{L}_V \\| ]. Returns gamma.\"\"\"\n    return gamma"
+  },
+  {
+    "name": "non_commutative_gravitational_kernel",
+    "description": "Background-independent spacetime definition.",
+    "type": "unified_theory",
+    "code": "def non_commutative_gravitational_kernel(T_mu_nu, phi):\n    \"\"\"Placeholder for g_{\\mu\\nu} = \\int d^4\\theta \\text{Tr} (e^{i[\\hat{x}^\\mu, \\hat{x}^\\nu]_\\theta} \\cdot \\hat{T}_{\\mu\\nu} \\phi(\\theta)). Returns T_mu_nu.\"\"\"\n    import numpy as np\n    return np.array(T_mu_nu)"
+  },
+  {
+    "name": "chiral_flux_equation",
+    "description": "Derives Standard Model parameters from topological fluxes.",
+    "type": "unified_theory",
+    "code": "def chiral_flux_equation(omega_i, omega_j, F_flux, kappa, phi_mod, lambda_):\n    \"\"\"Placeholder for \\mathcal{Y}_{ij} = \\kappa \\int_{\\Sigma_6} \\omega_i \\wedge \\omega_j \\wedge \\mathcal{F}_{\\text{flux}} \\cdot e^{-\\lambda |\\phi_{\\text{mod}}|^2}. Returns kappa.\"\"\"\n    return kappa"
+  },
+  {
+    "name": "topological_resonance_condition",
+    "description": "Amplifies quantum gravity effects via topological invariants.",
+    "type": "experimental_signatures",
+    "code": "def topological_resonance_condition(k, psi_n, psi_0, beta):\n    \"\"\"Placeholder for \\mathcal{A}_{\\text{grav}}(k) = \\sum_n \\frac{ \\langle \\psi_n | \\hat{\\mathcal{O}}_{\\text{top}} | \\psi_0 \\rangle }{k^2 - m_n^2 + i\\epsilon} e^{i\\beta \\cdot \\text{Ind}(k_n)}. Returns beta.\"\"\"\n    return beta"
+  },
+  {
+    "name": "entangled_cmb_neutrino_tomography",
+    "description": "Joint signature for quantum gravity effects.",
+    "type": "experimental_signatures",
+    "code": "def entangled_cmb_neutrino_tomography(ell, tau, Lambda, theta_k):\n    \"\"\"Placeholder for \\mathcal{C}_{\\ell}^{\\nu\\text{-B}} = \\frac{\\tau \\cdot |\\nabla \\Lambda| \\cdot \\cos\\theta_k}{\\sqrt{\\ell(\\ell+1)}}. Returns tau * cos(theta_k).\"\"\"\n    import math\n    return tau * math.cos(theta_k)"
+  },
+  {
+    "name": "novel_quantum_constants",
+    "description": "Returns dictionary of novel quantum physics constants.",
+    "type": "constants",
+    "code": "def novel_quantum_constants():\n    \"\"\"Returns key novel quantum physics constants.\"\"\"\n    return {\n        'Topological_Coupling_Constant_kappa': 'Dimensionless (theory-dependent)',\n        'Fractal_Scaling_Parameter_s_fract': '~Lambda_QCD^-1',\n        'Holographic_Complexity_Scale_beta': '~10^-2 in Planck units'\n    }"
+  }
+]

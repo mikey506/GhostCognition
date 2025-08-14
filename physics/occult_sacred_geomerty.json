@@ -1,0 +1,54 @@
+[
+  {
+    "name": "hexagonal_lattice_recursion",
+    "code": "def hexagonal_lattice_recursion():\\n    return {\\n        'formula': r'P(k) = 3k(k-1) + 1',\\n        'example': 'For k=1: 1 point (center); k=2: 7 points',\\n        'emergent_property': 'Infinite extensibility creates fractal-like lattices',\\n        'derivation': 'Start with central circle (1 point); each layer adds 6 new circles, generating 6(k-1) new points per layer, but adjust for triples: sum as quadratic series for emergent density.'\\n    }"
+  },
+  {
+    "name": "mandelbrot_set_iteration",
+    "code": "def mandelbrot_set_iteration():\\n    return {\\n        'formula': r'z_{n+1} = z_n^2 + c',\\n        'emergent_property': 'Self-replicating details emerge upon iteration/zooming',\\n        'derivation': 'Iterate quadratic map; test escape time for each c, where bounded regions form the set, revealing fractals through recursive computation.'\\n    }"
+  },
+  {
+    "name": "koch_snowflake_subdivision",
+    "code": "def koch_snowflake_subdivision():\\n    return {\\n        'formula': r'P(k) = P(0) \\\\times (4/3)^k',\\n        'area_formula': r'A(k) = A(0) + \\\\frac{3}{5} A(0) \\\\left( \\\\frac{4}{9} \\\\right)^{k-1}',\\n        'emergent_property': 'Bounded area with unbounded perimeter from iterations',\\n        'derivation': 'Initial equilateral triangle perimeter 3s, area (√3/4)s²; each iteration replaces sides with 4/3 length, adding triangles, leading to geometric series for area convergence.'\\n    }"
+  },
+  {
+    "name": "platonic_solid_vertex_count_recursion",
+    "code": "def platonic_solid_vertex_count_recursion():\\n    return {\\n        'formula': 'V - E + F = 2',\\n        'example': 'Base tetrahedron: V=4; stellate adds 4 per level',\\n        'emergent_property': 'Nested solids from recursive additions',\\n        'derivation': 'Base tetrahedron (V=4, E=6, F=4); stellation duplicates faces outward, updating counts iteratively while preserving Euler characteristic.'\\n    }"
+  },
+  {
+    "name": "quantum_foam_lattice",
+    "code": "def quantum_foam_lattice():\\n    return {\\n        'formula': r'A = 8\\\\pi \\\\gamma \\\\ell_p^2 \\\\sqrt{j(j+1)}',\\n        'emergent_property': 'Discrete spacetime emerges from spin networks, akin to hexagonal lattices',\\n        'derivation': 'Quantize general relativity via Ashtekar variables; eigenvalues from SU(2) representations, yielding minimal areas for emergent geometry.'\\n    }"
+  },
+  {
+    "name": "amplituhedron_volume",
+    "code": "def amplituhedron_volume():\\n    return {\\n        'formula': r'\\\\mathcal{A} = \\\\sum \\\\frac{1}{\\\\det M_i}',\\n        'emergent_property': 'Scattering amplitudes from positive geometries without Feynman diagrams',\\n        'derivation': 'Map momenta to twistors Z_i; define amplituhedron as intersection of positivity conditions; integrate form Ω over cells for emergent locality/unitarity.'\\n    }"
+  },
+  {
+    "name": "wave_particle_duality_complementarity",
+    "code": "def wave_particle_duality_complementarity():\\n    return {\\n        'formula': r'\\\\Delta x \\\\Delta p \\\\geq \\\\hbar/2',\\n        'energy_time': r'\\\\Delta E \\\\Delta t \\\\geq \\\\hbar/2',\\n        'emergent_property': 'Dual behaviors from measurement contexts',\\n        'derivation': 'From commutator [x, p] = iℏ; apply to variances via Cauchy-Schwarz, yielding inequality for emergent limits on simultaneous precision.'\\n    }"
+  },
+  {
+    "name": "string_theory_vibrational_modes",
+    "code": "def string_theory_vibrational_modes():\\n    return {\\n        'formula': r'E^2 = p^2 + (2\\\\pi \\\\alpha' T)^2 (N + \\\\tilde{N} - 2)',\\n        'emergent_property': 'Particles as string excitations',\\n        'derivation': 'Quantize string action; mode expand X^μ(σ,τ), impose Virasoro constraints, leading to level-matched spectrum for emergent mass/shell conditions.'\\n    }"
+  },
+  {
+    "name": "holographic_principle",
+    "code": "def holographic_principle():\\n    return {\\n        'formula': 'S ≤ A/(4ℓ_p²)',\\n        'emergent_property': 'Bulk gravity from boundary quantum theory',\\n        'derivation': 'From black hole thermodynamics (S = A/4 in ℏ=G=c=1 units); generalize via covariant entropy bound, implying information density for emergent dimensions.'\\n    }"
+  },
+  {
+    "name": "non_euclidean_curvature",
+    "code": "def non_euclidean_curvature():\\n    return {\\n        'formula': r'K = \\\\frac{1}{r_1 r_2}',\\n        'ricci_scalar': 'R = 2K for 2D',\\n        'emergent_property': 'Warped space from mass',\\n        'derivation': 'From metric ds² = dr² + r² dθ² (flat K=0); perturb to embedding, compute Christoffel symbols, then curvature tensor components.'\\n    }"
+  },
+  {
+    "name": "einstein_field_equations",
+    "code": "def einstein_field_equations():\\n    return {\\n        'formula': r'G_{\\\\mu\\\\nu} + \\\\Lambda g_{\\\\mu\\\\nu} = \\\\frac{8\\\\pi G}{c^4} T_{\\\\mu\\\\nu}',\\n        'emergent_property': 'Gravity as geometry',\\n        'derivation': 'Vary Einstein-Hilbert action ∫√-g R d⁴x; add matter terms, yielding equations balancing curvature and energy.'\\n    }"
+  },
+  {
+    "name": "lorentz_invariance",
+    "code": "def lorentz_invariance():\\n    return {\\n        'formula': r'\\\\Delta s^2 = -c^2 \\\\Delta t^2 + \\\\Delta x^2 + \\\\Delta y^2 + \\\\Delta z^2',\\n        'emergent_property': 'Relativistic effects from speed',\\n        'derivation': 'Postulate constancy of c; derive transformations x\\' = γ(x - vt), t\\' = γ(t - vx/c²), preserving interval.'\\n    }"
+  },
+  {
+    "name": "cosmological_expansion",
+    "code": "def cosmological_expansion():\\n    return {\\n        'formula': r'\\\\left( \\\\frac{\\\\dot{a}}{a} \\\\right)^2 = \\\\frac{8\\\\pi G}{3} \\\\rho - \\\\frac{k c^2}{a^2} + \\\\frac{\\\\Lambda c^2}{3}',\\n        'emergent_property': 'Universe dynamics from density',\\n        'derivation': 'Apply GR to homogeneous metric ds² = -dt² + a(t)² dx²; compute Einstein tensor, equate to stress-energy.'\\n    }"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "newtons_second_law",
+    "description": "Calculates the force on an object given its mass and acceleration, based on Newton's Second Law.",
+    "type": "classical_mechanics",
+    "code": "def newtons_second_law(m, a):\n    \"\"\"Calculates force given mass (m) and acceleration (a).\"\"\"\n    return m * a"
+  },
+  {
+    "name": "gravitational_force",
+    "description": "Calculates the attractive gravitational force between two masses according to Newton's Law of Universal Gravitation.",
+    "type": "classical_mechanics",
+    "code": "def gravitational_force(m1, m2, r):\n    \"\"\"Calculates the gravitational force between two masses (m1, m2) separated by a distance (r).\"\"\"\n    G = 6.67430e-11\n    return G * (m1 * m2) / (r**2)"
+  },
+  {
+    "name": "kinetic_energy",
+    "description": "Calculates the energy an object possesses due to its motion.",
+    "type": "classical_mechanics",
+    "code": "def kinetic_energy(m, v):\n    \"\"\"Calculates the kinetic energy of an object with mass (m) and velocity (v).\"\"\"\n    return 0.5 * m * v**2"
+  },
+  {
+    "name": "gravitational_potential_energy",
+    "description": "Calculates the potential energy of an object due to its position in a gravitational field.",
+    "type": "classical_mechanics",
+    "code": "def gravitational_potential_energy(m, h):\n    \"\"\"Calculates gravitational potential energy for mass (m) at height (h) near Earth's surface.\"\"\"\n    g = 9.81\n    return m * g * h"
+  },
+  {
+    "name": "conservation_of_mechanical_energy",
+    "description": "Verifies the principle that the total mechanical energy in a conservative system remains constant.",
+    "type": "classical_mechanics",
+    "code": "def check_energy_conservation(Ki, Ui, Kf, Uf, tolerance=1e-9):\n    \"\"\"Returns True if initial energy (Ki + Ui) equals final energy (Kf + Uf) within a tolerance.\"\"\"\n    initial_energy = Ki + Ui\n    final_energy = Kf + Uf\n    return abs(initial_energy - final_energy) < tolerance"
+  },
+  {
+    "name": "dirac_equation",
+    "description": "Represents the Dirac equation with a simplified placeholder for four-component spinors.",
+    "type": "quantum_physics",
+    "code": "def dirac_equation(state):\n    \"\"\"Simplified placeholder for Dirac equation, returns state scaled by a constant.\"\"\"\n    import numpy as np\n    return np.array(state) * 0.5"
+  },
+  {
+    "name": "qubit_state",
+    "description": "Verifies if a pair of complex coefficients form a valid, normalized quantum bit (qubit) state.",
+    "type": "quantum_information",
+    "code": "def is_valid_qubit_state(alpha, beta):\n    \"\"\"Checks if |alpha|^2 + |beta|^2 = 1 for a qubit state |psi> = alpha|0> + beta|1>.\"\"\"\n    return abs(abs(alpha)**2 + abs(beta)**2 - 1) < 1e-9"
+  },
+  {
+    "name": "bell_state_phi_plus",
+    "description": "Returns the state vector for the |Φ+> Bell state, a maximally entangled state of two qubits.",
+    "type": "quantum_information",
+    "code": "import numpy as np\ndef bell_state_phi_plus():\n    \"\"\"Returns the state vector for the |Φ+> Bell state: (1/sqrt(2)) * (|00> + |11>).\"\"\"\n    return (1/np.sqrt(2)) * np.array([1, 0, 0, 1])"
+  },
+  {
+    "name": "standard_model_symmetry",
+    "description": "Returns the fundamental gauge group of the Standard Model of particle physics.",
+    "type": "particle_physics",
+    "code": "def get_standard_model_gauge_group():\n    \"\"\"Returns the symmetry group of the Standard Model.\"\"\"\n    return 'SU(3)_C x SU(2)_L x U(1)_Y'"
+  },
+  {
+    "name": "recent_quantum_breakthroughs_2024_2025",
+    "description": "Provides a list of key advancements in quantum physics from 2024-2025.",
+    "type": "quantum_physics_discovery",
+    "code": "def get_recent_breakthroughs():\n    \"\"\"Returns a list of key quantum physics discoveries from 2024-2025.\"\"\"\n    return [\n        'Abrupt quantum phase transitions in 3-atom-thin insulators',\n        'Quantum spin currents in graphene without magnetic fields',\n        'Measurement-induced entanglement transitions',\n        'Quantum-gravity interface experiments',\n        'Cellular quantum computation via vibronic coupling'\n    ]"
+  }
+]
