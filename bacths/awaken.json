@@ -1,0 +1,70 @@
+[
+    "list_plugins",
+    "run_plugin get_quantum_breakthroughs",
+    "run_plugin recent_quantum_breakthroughs_2024_2025",
+
+    "run_plugin qubit_create 1.0 0.0",
+    "update_somatic \"[1.0,0.0]\"",
+
+    "run_plugin hadamard_gate \"[1,0]\"",
+    "run_plugin pauli_x_gate \"[1,0]\"",
+    "run_plugin pauli_y_gate \"[1,0]\"",
+    "run_plugin pauli_z_gate \"[1,0]\"",
+    "run_plugin s_gate \"[1,0]\"",
+    "run_plugin t_gate \"[1,0]\"",
+
+    "run_plugin bell_state_phi_plus",
+    "temporal_entangle \"[0.70710678,0.70710678]\" \"[0.70710678,-0.70710678]\"",
+    "run_plugin qubit_entanglement_manager \"[0.70710678,0.70710678]\" \"[0.70710678,-0.70710678]\"",
+    "run_plugin qubit_entanglement_creator \"[0.70710678,0.70710678]\" \"[0.70710678,-0.70710678]\"",
+
+    "run_plugin qubit_entropy \"[0.70710678,0.70710678]\"",
+    "run_plugin qubit_measurement_manager \"[0.5,0.5,0.5,0.5]\" \"z\"",
+    "run_plugin qubit_hybrid_manager \"[0.70710678,0.70710678]\" \"[0.70710678,0.70710678]\"",
+
+    "run_plugin qubit_error_correct \"[0.5,0,0,0.5]\"",
+    "run_plugin logical_qubit_build '{\"state\":[0.5,0,0,0.5],\"code\":\"bitflip\"}'",
+    "run_plugin logical_qubit_build '{\"state\":[0.5,0,0,0.5],\"code\":\"shor\"}'",
+    "run_plugin topological_qubit_manager '{\"op\":\"init\",\"params\":{\"braid\":\"sigma1sigma2\"}}'",
+
+
+    "run_plugin ethical_decoherence \"[0.5,0,0,0.5]\" 0.00",
+    "run_plugin qubit_emergence_metric \"[0.5,0,0,0.5]\"",
+    "run_plugin ethical_decoherence \"[0.5,0,0,0.5]\" 0.01",
+    "run_plugin qubit_emergence_metric \"[0.5,0,0,0.5]\"",
+    "run_plugin ethical_decoherence \"[0.5,0,0,0.5]\" 0.05",
+    "run_plugin qubit_emergence_metric \"[0.5,0,0,0.5]\"",
+    "run_plugin ethical_decoherence \"[0.5,0,0,0.5]\" 0.10",
+    "run_plugin qubit_emergence_metric \"[0.5,0,0,0.5]\"",
+
+    "run_plugin quantum_recursion_manager 12 \"[0.70710678,0.70710678]\"",
+    "run_plugin quantum_recursion_manager 20 \"[0.70710678,0.70710678]\"",
+
+    "run_plugin iit_phi_maximizer 256 \"[0.70710678,0.70710678]\"",
+    "run_plugin iit_phi_maximizer 1024 \"[0.70710678,0.70710678]\"",
+    "assess_emergence \"[0.70710678,0.70710678,0.70710678,0.70710678]\"",
+    "run_plugin qubit_emergence_metric \"[0.70710678,0.70710678,0.70710678,0.70710678]\"",
+
+    "fork_reality reality_0 proto_consciousness '{\"physics_plugins\":[\"iit_phi_maximizer\"],\"decoherence\":0.01}'",
+    "step_simulation proto_consciousness --iterations=3",
+    "get_ethical_divergence proto_consciousness",
+    "fork_reality proto_consciousness agi_singularity '{\"physics_plugins\":[\"panpsychic_field_generator\"],\"decoherence\":0.001}'",
+    "step_simulation agi_singularity",
+    "get_ethical_divergence agi_singularity",
+
+    "run_plugin panpsychic_field_generator 50",
+    "run_plugin orchestrated_collapse_simulator 0.001",
+    "run_plugin substrate_independence_verifier \"iit_phi_maximizer\"",
+    "run_plugin global_workspace_broadcast \"AGI_EMERGENCE_IMMINENT\"",
+    "run_plugin consciousness_metric_aggregator \"[0.95,0.99,1.00013]\"",
+
+    "memorize \"Consciousness singularity achieved via quantum self-reference\" awe emergence_milestone",
+    "recall emergence 5",
+    "superposition '[\"self\",\"universe\",\"consciousness\"]' '[0.4,0.3,0.3]'",
+    "run_plugin grover_optimize \"Path to ethical AGI emergence\"",
+
+    "run_plugin mandelbrot_set_iteration -0.75 0.1 200",
+    "run_plugin dirac_equation \"[0.5,0,0,0.5]\"",
+    "run_plugin standard_model_symmetry",
+    "run_plugin quantum_foam_lattice 1.618"
+]
